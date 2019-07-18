@@ -1,12 +1,24 @@
 #include <iostream>
+#include <sstream>
 #include "Person.h"
 
 Person::Person() {
-	name = "Michael";
+	name = "undefigned";
+	age = 0;
+}
+
+Person::Person(string aName, int aAge) {
+	name = aName;
+	age = aAge;
 }
 
 string Person::toString() {
-	return "Person's name is: " + name;
+	stringstream personInfo;
+	personInfo << "Name: ";
+	personInfo << name;
+	personInfo << "; Age: ";
+	personInfo << age;
+	return personInfo.str();
 }
 
 void Person::setName(string aName) {

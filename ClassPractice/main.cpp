@@ -24,9 +24,10 @@ int main() {
 	{
 		Person person;
 		cout << person.toString() << endl;
-		person.setName("Cassy");
-		cout << person.toString() << endl;
-		cout << "Name of person with get method: " << person.getName() << endl;
+		Person person2("Cassy", 26);
+		cout << person2.toString() << endl;
+		Person person3("Sue", 32);
+		cout << person3.toString() << endl;
 	}
 
 	// String Streams
