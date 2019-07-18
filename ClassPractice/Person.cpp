@@ -7,9 +7,9 @@ Person::Person() {
 	age = 0;
 }
 
-Person::Person(string aName, int aAge) {
-	name = aName;
-	age = aAge;
+Person::Person(string name, int age) {
+	this->name = name;
+	this->age = age;
 }
 
 string Person::toString() {
@@ -21,8 +21,8 @@ string Person::toString() {
 	return personInfo.str();
 }
 
-void Person::setName(string aName) {
-	name = aName;
+void Person::setName(string name) {
+	this->name = name;
 }
 
 string Person::getName() {

@@ -7,9 +7,9 @@ class Person {
 	int age;
 public:
 	Person();
-	Person(string aName, int aAge);
+	Person(string name, int age);
 	string toString();
-	void setName(string aName);
+	void setName(string name);
 	string getName();
 };
 
