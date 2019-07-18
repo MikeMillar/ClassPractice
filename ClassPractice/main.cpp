@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Cat.h"
 #include "Dog.h"
+#include "Person.h"
 
 using namespace std;
 
@@ -17,6 +18,14 @@ int main() {
 		dog.speak();
 		dog.toggleHappy();
 		dog.speak();
+	}
+
+	{
+		Person person;
+		cout << person.toString() << endl;
+		person.setName("Cassy");
+		cout << person.toString() << endl;
+		cout << "Name of person with get method: " << person.getName() << endl;
 	}
 
 	cout << "Ending program ..." << endl;
