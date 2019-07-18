@@ -6,8 +6,8 @@ class Person {
 	string name;
 	int age;
 public:
-	Person();
-	Person(string name, int age);
+	Person() : name("undefined"), age(0) {};
+	Person(string name, int age) : name(name), age(age) {};
 	string toString();
 	void setName(string name);
 	string getName();
